@@ -1,0 +1,44 @@
+<html>
+<script>
+function arm()
+{
+var arm = 0,a,n,b,c,d,temp;
+n=Number(document.getElementById("input").value);
+temp=n;
+while(temp>0)
+{
+a=temp%10;
+temp=parseInt(temp/10);
+arm=arm+a*a*a;
+}
+if(arm==n)
+{
+window.alert("Armstrong number");
+}
+else
+{
+window.alert("Not Armstrong");
+}
+}
+</script>
+<body>
+Enter your number : <input id= "input">
+<button onclick="arm()">check</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

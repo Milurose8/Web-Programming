@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function largest()
+{
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=Number(document.getElementById("third").value);
+if(a>b && a>c)
+{
+window.alert(a +" is the largest");
+}
+else if (b>a && b>c)
+{
+window.alert(b +" is the largest");
+}
+else
+{
+window.alert(c +" is the largest");
+}
+}
+</script>
+</head>
+<body>
+Enter the first number:<br><input id="first"><br><br>
+Enter the second number:<br><input id ="second"><br><br>
+Enter the third number:<br><input id="third"><br><br>
+<button onclick="largest()">Large</button>
+</body>
+</html>

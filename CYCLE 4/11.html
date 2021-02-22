@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+.button {
+background-color : grey;
+border : none;
+color : white;
+padding : 8px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+h2 {
+color:maroon;
+text-align:center;
+text-decoration:underline;
+}
+p {
+color:navy;
+font-family:"Lucida Console","courier New",monospace;
+font-size:25px;
+}
+</style>
+</head>
+<body>
+<center>
+<br>
+<br>
+<label>Enter any color:
+<input id ="color" type="text"></label><br><br>
+<button class="button" onclick="changebg()">Set color</button>
+<h2>EIFFEl TOWER</h2>
+<p> The Eiffel tower is a wrought-iron lattice tower on the champ de mars in paris,France.it is named after the engineer Gustave Eiffel,whose company designed and built the tower.</p>
+<script>
+function changebg() {
+var color = document.getElementById("color").value;
+document.bgColor = color;
+}
+</script>
+</center>
+</body>
+</html>
